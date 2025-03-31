@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Add Subject{% endblock title %}
+
+{% block body %}
+<div class="container mt-4">
+  <h2>Add New Subject</h2>
+  <form method="POST" action="/addsubject">
+    <div class="form-group">
+      <label for="subject_name">Subject Name</label>
+      <input type="text" class="form-control" name="subject_name" id="subject_name" placeholder="Enter subject name" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Subject</button>
+  </form>
+</div>
+{% endblock body %}
